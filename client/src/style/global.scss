@@ -1,0 +1,488 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "variables";
+
+body {
+  background-color: theme("colors.slate.800");
+}
+
+.full-height {
+  height: 100vh !important;
+}
+
+.admin-main-layout {
+  background-color: theme("colors.slate.800");
+}
+
+.admin-layout-sider {
+  background-color: theme("colors.slate.900");
+}
+
+.admin-site-layout {
+  background: theme("colors.slate.800") !important;
+}
+
+.admin-layout-content {
+  background: theme("colors.slate.700") !important;
+  color: theme("colors.slate.100") !important;
+}
+
+.auth-layout-content {
+  border-radius: $itemRadius;
+}
+
+.user-main-layout {
+  background-color: theme("colors.slate.800");
+}
+
+.user-layout-sider {
+  background-color: theme("colors.slate.900");
+}
+
+.user-site-layout {
+  background: theme("colors.slate.800") !important;
+}
+
+.user-layout-content {
+  background: theme("colors.slate.700") !important;
+  color: theme("colors.slate.100") !important;
+}
+
+.ant-layout-content {
+  min-height: auto !important;
+}
+
+.login-button {
+  border-radius: $buttonRadius;
+  color: $textWhite;
+  background-color: theme('colors.purple.700');
+  border: none;
+  user-select: none !important;
+}
+
+.login-button:not(:disabled):hover {
+  background-color: theme('colors.purple.800');
+  color: $textWhite;
+}
+
+.login-button:not(:disabled):focus-visible {
+  outline: 4px solid theme('colors.purple.500');
+  outline-offset: 2px;
+  transition: outline-offset 0.2s ease-in-out;
+}
+
+.login-button:not(:disabled):active {
+  border-color: theme('colors.purple.500');
+  color: $textWhite;
+}
+
+.login-input:focus {
+  outline: none;
+}
+
+.login-input {
+  border-radius: 0.6rem;
+}
+
+.ant-table {
+  background: $layoutBgColor !important;
+  overflow-x: auto !important;
+}
+
+.ant-table-thead > tr > th {
+  background: $layoutBgColor !important;
+  color: $textWhite !important;
+}
+
+.ant-table-tbody > tr > td {
+  background: theme('colors.slate.800') !important;
+  color: $textWhite !important;
+}
+
+.ant-pagination-total-text {
+  color: $textWhite !important;
+}
+
+.ant-pagination {
+  padding: 0.6rem !important;
+  margin-top: 0 !important;
+  background: $layoutBgColor !important;
+  border-radius: 0 0 $componentRadius $componentRadius !important;
+
+  .anticon {
+    vertical-align: 0 !important;
+  }
+}
+
+.ant-pagination-item-link {
+  color: $textWhite !important;
+  font-size: $componentRadius !important;
+  background: theme('colors.slate.700') !important;
+  border-radius: $componentRadius !important;
+}
+
+//#1677ff
+
+.ant-pagination-item-link:hover {
+  background: theme('colors.slate.600') !important;
+}
+
+.ant-pagination-item a {
+  color: $textWhite !important;
+}
+
+.ant-pagination-item-active {
+  background: #1677ff !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.ant-pagination-item-ellipsis {
+  color: $textWhite !important;
+
+  svg {
+    color: $textWhite !important;
+  }
+}
+
+.ant-pagination-item-link-icon {
+  color: $textWhite !important;
+}
+
+.ant-table-tbody > tr > td {
+  border-color: theme('colors.slate.600') !important;
+}
+
+.ant-table-cell {
+  border-color: theme('colors.slate.600') !important;
+
+}
+
+:where(.css-dev-only-do-not-override-acm2ia).ant-table-wrapper .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  background-color: theme('colors.slate.600') !important;
+}
+
+.ant-empty-description {
+  color: $textWhite !important;
+}
+
+.custom-button {
+  border-radius: $buttonRadius;
+  color: $textWhite;
+  background-color: theme('colors.purple.700');
+  border: none;
+  user-select: none !important;
+
+  &:hover {
+    background-color: theme('colors.purple.800') !important;
+    color: $textWhite !important;
+    outline: none !important;
+    scale: 1.05 !important;
+  }
+
+  &:focus {
+    background-color: theme('colors.purple.800') !important;
+    color: $textWhite !important;
+    outline: none !important;
+  }
+
+  &:disabled {
+    background-color: theme('colors.purple.600') !important;
+    color: theme('colors.slate.300') !important;
+    outline: none !important;
+  }
+}
+
+.ant-popover-inner {
+  background-color: theme('colors.slate.700') !important;
+}
+
+.ant-popconfirm-message-title, .ant-popconfirm-description {
+  color: $textWhite !important;
+}
+
+.ant-popconfirm-buttons {
+  button {
+    border-radius: $buttonRadius;
+    color: $textWhite;
+    background-color: theme('colors.purple.700');
+    border: none;
+    user-select: none !important;
+
+    &:hover {
+      background-color: theme('colors.purple.800') !important;
+      color: $textWhite !important;
+      outline: none !important;
+      scale: 1.1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:focus {
+      background-color: theme('colors.purple.800') !important;
+      color: $textWhite !important;
+      outline: none !important;
+    }
+  }
+}
+
+.ant-popover-title, .ant-popover-inner-content {
+  color: $textWhite !important;
+}
+
+.ant-drawer-header {
+  background-color: theme('colors.slate.900') !important;
+}
+
+.ant-drawer-title {
+  color: $textWhite !important;
+}
+
+.ant-drawer-header-title {
+  button {
+    color: $textWhite !important;
+  }
+}
+
+.ant-drawer-wrapper-body {
+  background-color: theme('colors.slate.700') !important;
+}
+
+.ant-drawer-content-wrapper, .ant-drawer-content, .ant-drawer-wrapper-body {
+  border-radius: $componentRadius 0 0 $componentRadius;
+}
+
+.ant-drawer-content {
+  background-color: theme('colors.slate.700') !important;
+}
+
+.ant-drawer-body {
+  color: $textWhite;
+}
+
+.folder-modal {
+  .ant-modal-content {
+    background-color: theme('colors.slate.700') !important;
+    border-radius: $componentRadius;
+
+    button {
+      margin-right: 1rem;
+      margin-top: .6rem;
+
+      svg {
+        &:hover {
+          color: $textWhite !important;
+        }
+
+        &:focus {
+          background-color: theme('colors.purple.800') !important;
+        }
+      }
+    }
+  }
+
+  .ant-modal-header {
+    background-color: theme('colors.slate.900') !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: $componentRadius;
+  }
+
+  .ant-modal-title {
+    color: $textWhite !important;
+  }
+
+  .ant-modal-close-x {
+    color: $textWhite !important;
+  }
+
+  .ant-modal-body {
+    color: $textWhite !important;
+  }
+
+  .ant-modal-footer {
+    background-color: theme('colors.slate.900') !important;
+    border-radius: 0 0 $componentRadius $componentRadius;
+  }
+}
+
+.search-input {
+
+}
+
+.ant-table-column-sorter-up.active {
+  color: theme('colors.blue.700') !important;
+}
+
+.ant-table-column-sorter-down.active {
+  color: theme('colors.blue.700') !important;
+}
+
+.ant-table-column-sorter-up, .ant-table-column-sorter-down:not(.active) {
+  color: theme('colors.slate.400') !important;
+}
+
+.ant-table {
+  overflow-x: auto;
+}
+
+.files-modal {
+  .ant-modal-content {
+    background-color: theme('colors.slate.700') !important;
+    border-radius: $componentRadius;
+
+    button {
+      margin-right: 1rem;
+      margin-top: .6rem;
+
+      svg {
+        &:hover {
+          color: $textWhite !important;
+        }
+
+        &:focus {
+          background-color: theme('colors.purple.800') !important;
+        }
+      }
+    }
+  }
+
+  .ant-modal-header {
+    background-color: theme('colors.slate.900') !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: $componentRadius;
+  }
+
+  .ant-modal-title {
+    color: $textWhite !important;
+  }
+
+  .ant-modal-close-x {
+    color: $textWhite !important;
+  }
+
+  .ant-modal-body {
+    color: $textWhite !important;
+  }
+
+  .ant-modal-footer {
+    background-color: theme('colors.slate.900') !important;
+    border-radius: 0 0 $componentRadius $componentRadius;
+  }
+}
+
+.delete-btn {
+  border-radius: $buttonRadius;
+  color: $textWhite;
+  background-color: theme('colors.red.700');
+  border: none;
+  user-select: none !important;
+
+  &:hover {
+    background-color: theme('colors.red.800') !important;
+    color: $textWhite !important;
+    outline: none !important;
+  }
+
+  &:focus {
+    background-color: theme('colors.red.800') !important;
+    color: $textWhite !important;
+    outline: none !important;
+  }
+
+  &:after {
+    box-shadow: theme('colors.red.800') !important;
+  }
+}
+
+.update-btn {
+  border-radius: $buttonRadius;
+  color: $textWhite;
+  background-color: theme('colors.blue.700');
+  border: none;
+  user-select: none !important;
+
+  &:hover {
+    background-color: theme('colors.blue.800') !important;
+    color: $textWhite !important;
+    outline: none !important;
+  }
+
+  &:focus {
+    background-color: theme('colors.blue.800') !important;
+    color: $textWhite !important;
+    outline: none !important;
+  }
+}
+
+.user-update-modal {
+  .ant-modal-content {
+    background-color: theme('colors.slate.700') !important;
+    border-radius: $componentRadius;
+
+    button {
+      margin-right: 1rem;
+      margin-top: .6rem;
+
+      svg {
+        &:hover {
+          color: $textWhite !important;
+        }
+
+        &:focus {
+          background-color: theme('colors.purple.800') !important;
+        }
+      }
+    }
+  }
+
+  .ant-modal-header {
+    background-color: theme('colors.slate.900') !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: $componentRadius;
+  }
+
+  .ant-modal-title {
+    color: $textWhite !important;
+  }
+
+  .ant-modal-close-x {
+    color: $textWhite !important;
+  }
+
+  .ant-modal-body {
+    color: $textWhite !important;
+  }
+
+  .ant-modal-footer {
+    background-color: theme('colors.slate.900') !important;
+    border-radius: 0 0 $componentRadius $componentRadius;
+  }
+}
+
+.user-edit {
+  .ant-input[disabled] {
+    background-color: theme('colors.slate.100') !important;
+  }
+}
+
+.notfound-result {
+  .ant-result-title {
+    color: $textWhite !important;
+  }
+
+  .ant-result-subtitle {
+    color: $textWhite !important;
+  }
+
+  .ant-btn {
+    background: theme('colors.purple.800') !important;
+    color: $textWhite !important;
+    border-color: #2A2A3D !important;
+  }
+
+  .ant-result-image {
+    path:nth-child(11) {
+      fill: theme('colors.purple.800') !important;
+    }
+  }
+}
+
